@@ -1,0 +1,4 @@
+[workspace]
+members = ["saas", "saas-*", "examples/*"]
+default-members = ["saas", "saas-*"]
+resolver = "2"
