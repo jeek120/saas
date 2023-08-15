@@ -66,7 +66,7 @@ pub use self::request_parts::OriginalUri;
 
 #[cfg(feature = "ws")]
 #[doc(inline)]
-pub use self::ws::WebsocketUpgrade;
+pub use self::ws::WebSocketUpgrade;
 
 pub(super) fn has_content_type(headers: &HeaderMap, expected_content_type: &mime::Mime) -> bool {
     let content_type = if let Some(content_type) = headers.get(header::CONTENT_TYPE) {

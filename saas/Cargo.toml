@@ -18,8 +18,7 @@ query = ["dep:serde_urlencoded"]
 tokio = ["dep:tokio", "hyper/server", "hyper/tcp", "hyper/runtime", "tower/make"]
 tower-log = ["tower/log"]
 tracing = ["dep:tracing", "saas-core/tracing"]
-# ws = ["tokio", "dep:tokio-tungstenite", "dep:sha1", "dep:base64"]
-ws = []
+ws = ["tokio", "dep:tokio-tungstenite", "dep:sha1", "dep:base64"]
 
 __private_docs = ["tower/full", "dep:tower-http"]
 
@@ -113,9 +112,9 @@ tokio-stream = "0.1"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["json"] }
 uuid = { version = "1.0", features = ["serde", "v4"] }
-base64 = { version = "0.21.2"}
-sha1 = { version = "0.10"}
-tokio-tungstenite = {version = "0.20.0"}
+# base64 = { version = "0.21.2"}
+# sha1 = { version = "0.10"}
+# tokio-tungstenite = {version = "0.20.0"}
 
 [package.metadata.docs.rs]
 all-features = true
