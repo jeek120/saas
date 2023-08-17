@@ -1,0 +1,16 @@
+[package]
+name = "example_consume_body_in_extractor_or_middleware"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+saas = { path = "../../saas" }
+hyper = "0.14"
+tokio = { version = "1.0", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.4.0", features = ["map-request-body", "util"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
